@@ -1,0 +1,40 @@
+section {
+    width: 80%;
+    margin: auto;
+  }
+  
+  section h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  section a {
+    /* display: block; */
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .section-img {
+    max-width: 33%;
+    height: 300px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  section p {
+    text-align: justify;
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  @media (min-width: 600px) {
+    section a {
+      display: flex;
+      width: 45%;
+      margin: 20px 2.5%;
+    }
+  }
+  

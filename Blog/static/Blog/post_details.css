@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}

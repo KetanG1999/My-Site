@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="{% static 'Blog/all_post.css' %}"/>
+</head>
+
+<body>
+<section>
+    <h2>All Post</h2>
+    <div>
+    {% for post in posts %}
+    <a href=" {% url 'post_detail' slug=post.slug %} ">
+        <img src="{% static 'blog/'|add:post.image %}" alt="{{  post.title }}"></a>
+    {% endfor %}
+    </div>
+</section>
+</body>
+</html>

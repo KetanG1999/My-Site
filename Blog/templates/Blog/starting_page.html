@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="{% static 'Blog/starting_page.css' %}"/>
+</head>
+<section>
+    <h1>Introduction</h1>
+    <p class='intro'>Welcome to [Your Blog Name]!
+
+        We’re Ketan and [Co-Blogger's Name], passionate explorers sharing our adventures, 
+        from bustling cities to serene beaches. Our mission is to inspire and inform with
+        authentic stories and tips. Join us in discovering the world's hidden gems and unforgettable
+        experiences.
+        
+        Let's explore together!
+    </p>
+</section>
+
+{% comment %} <section> {% endcomment %}
+    <header>
+        <h2>Our Latest Post</h2>
+    </header>
+    <a href="{% url 'postlist' %}">All Post</a><br/>
+    <div>
+    <img src= ' {% static "Blog/china.jpg" %} ' alt='img 1' >
+    <img  src=' {% static "Blog/misiam.jpg" %} ' alt='img 2'>
+    <img src=' {% static "Blog/squre.jpg" %} ' alt='img 2'>
+    </div>
+{% comment %} </section> {% endcomment %}
+<section>
+    <div class="titles">
+        {% for post in posts|slice:":3" %}
+            <h3>Title {{ forloop.counter }}: {{ post.title }}</h3>
+            <h4> {{ post.date }} </h4>
+        {% endfor %}
+    </div>
+    <div>
+        <h2>About US</h2>
+
+</section>
+
+
